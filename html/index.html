@@ -82,6 +82,55 @@
         <video src="assets/ic_vid.mp4" autoplay loop muted height="150"></video>
     </div>
 </section>
+<br>
+<section>
+    <h2>Formulaires</h2>
+
+    <form action="/action.php" method="post">
+        <label for="name">Votre nom:</label>
+        <input type="text" placeholder="Entrez votre nom" id="name">
+        <br>
+        <label for="age">Âge</label>
+        <input type="number" id="age" min="0" max="99" step="1">
+        <br>
+        <label for="gender">Genre</label>
+        <select name="" id="gender">
+            <option value="homme">Homme</option>
+            <option selected value="femme">Femme</option>
+        </select>
+
+        <div>
+            <input type="radio" id="human" name="type" checked>
+            <label for="human">Humain</label>
+
+            <input type="radio" id="dog" name="type">
+            <label for="dog">chien</label>
+
+            <input type="radio" id="cat" name="type">
+            <label for="cat">Chat</label>
+        </div>
+
+        <label for="msg">Votre message</label>
+        <textarea name="" id="msg" cols="30" rows="10" placeholder="Entrez votre demande ici"></textarea>
+        
+        <div>
+<!--            <label for="anglais">Anglais</label>-->
+<!--            <input type="checkbox" id="anglais">-->
+
+            <label><input type="checkbox">Francais </label>
+            <label><input type="checkbox">Anglais </label>
+        </div>
+        <input type="submit" value="Valider" >
+    </form>
+</section>
+<br>
+
+<footer>
+
+    <a href="mailto:monelcocou@gmail.com">Ecrivez moi!</a>
+    <br>
+    <a href="assets/ic_2.png" download="mon-image">Télécharger la notice</a>
+</footer>
 
 </body>
 </html>
