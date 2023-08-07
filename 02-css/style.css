@@ -4,6 +4,12 @@
     src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
 }
 
+/*L'etoile donne du style à toutes les balises*/
+/**{*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+
 body{
     font-family: "DMSerif", Verdana;
     background: url("./assets/img/bg.jpeg") no-repeat center/cover;
@@ -26,6 +32,47 @@ h1{
 }
 
 main{
-    height: 500px;
+    min-height: 500px;
+    width: 90%;
     background: rgba(241, 238, 238, 0.52);
+
+    /*Centrer une boite*/
+    margin: 0 auto;
+    border: 2px solid #2424be;
+    border-radius: 20px;
+    box-shadow: 0 0 0 black;
+    padding: 15px;
 }
+
+h2{
+    margin: 0 ;
+}
+
+.flexbox{
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*Flexbox sert à répartir équitablement les élements*/
+
+.flexbox ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexbox li{
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: turquoise;
+
+    /*centrer un unique enfant verticalement et horizontalement*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
