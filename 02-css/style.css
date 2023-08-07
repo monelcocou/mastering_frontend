@@ -48,7 +48,8 @@ h2{
     margin: 0 ;
 }
 
-.flexbox{
+.flexbox,
+.grid{
     border: 2px solid skyblue;
     border-radius: 10px;
     padding: 10px;
@@ -76,3 +77,52 @@ h2{
     align-items: center;
 }
 
+/*GRID*/
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.grid img{
+    height: 150px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "i1 i2"
+        "ta ta"
+        "vi bt";
+}
+
+input, textarea{
+    margin: 5px;
+    border: 1px solid darkblue;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: "DMSerif", Verdana;
+    border-radius: 5px;
+}
+
+textarea{
+    grid-area: ta;
+    height: 40px;
+    resize: none;
+}
+
+#btn-submit{
+    grid-area: bt;
+    cursor: pointer;
+    background: cyan;
+    color: black;
+    transition : 0.2s;
+}
+
+#btn-submit:hover{
+    background: darkblue;
+    color: white;
+}
