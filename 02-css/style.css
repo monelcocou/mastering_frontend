@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@font-face {
+    font-family: "DMSerif";
+    src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+
+body{
+    font-family: "DMSerif", Verdana;
+    background: url("./assets/img/bg.jpeg") no-repeat center/cover;
+
+    /*vh: 100% de la taille de l'ecran de l'utilisateur VH: viewport height*/
+    min-height: 100vh;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+
+    /*Les tailles de police doivent être en rem*/
+    font-size: 2.5rem;
+    text-shadow: -9px -9px 9px #a9424287;
+    color: rgba(151, 23, 215, 0.82);
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+}
+
+main{
+    height: 500px;
+    background: rgba(241, 238, 238, 0.52);
+}
