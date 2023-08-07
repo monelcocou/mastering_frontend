@@ -49,11 +49,13 @@ h2{
 }
 
 .flexbox,
-.grid{
+.grid,
+.absolute{
     border: 2px solid skyblue;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+    min-height: 150px;
 }
 
 /*Flexbox sert à répartir équitablement les élements*/
@@ -125,4 +127,33 @@ textarea{
 #btn-submit:hover{
     background: darkblue;
     color: white;
+}
+
+
+/*ABSOLUTE*/
+/*Il faut mettre une position relative au parent pour */
+/*contraidre l'élément en absolute dans ses frontières'
+Sans élément en relative, l'element est en absolu par rapport au body*/
+.absolute{
+    position: relative;
+}
+
+#circle1{
+    height: 60px;
+    width: 60px;
+    background: skyblue;
+    position: absolute;
+    border-radius: 150px;
+    top: -20px;
+    right: -20px;
+}
+
+#circle2{
+    height: 40px;
+    width: 40px;
+    background: teal;
+    border-radius: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
